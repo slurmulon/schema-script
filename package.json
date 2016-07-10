@@ -1,0 +1,31 @@
+{
+  "name": "schema-script",
+  "version": "0.0.0",
+  "description": "JavaScript with JSON Schemas",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slurmulon/schema-script.git"
+  },
+  "keywords": [
+    "schema",
+    "script",
+    "language",
+    "transpiled",
+    "babel",
+    "plugin"
+  ],
+  "author": "Erik Vavro <me@madhax.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slurmulon/schema-script/issues"
+  },
+  "homepage": "https://github.com/slurmulon/schema-script#readme",
+  "dependencies": {
+    "ajv": "^4.1.7",
+    "sweet.js": "^2.0.0"
+  }
+}
