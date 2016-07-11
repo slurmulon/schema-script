@@ -12,6 +12,7 @@
 
  * http://sweetjs.org/doc/1.0/tutorial.html
  * http://sweetjs.org/browser/editor.html
+ * http://sweetjs.org/doc/1.0/reference.html#_syntax_transformer
 
 # JavaScript
 
