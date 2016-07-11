@@ -28,7 +28,7 @@ export syntax schema = function (ctx) {
   }(${obj}))`
 }
 
-syntax is = function (ctx) {
+export syntax is = function (ctx) {
   const identifier = ctx.next().value
   const instance   = ctx.next().value
   const schema     = ctx.next().value
