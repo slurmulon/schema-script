@@ -3,7 +3,7 @@
 const Ajv = require('is-my-json-valid')
 const ajv = new Ajv({ v5: true, jsonPointers: true, allErrors: true })
 
-syntax schema = function (ctx) {
+export syntax schema = function (ctx) {
   const identifier = ctx.next().value
   const reference  = `#/${identifier}`
 
@@ -25,11 +25,7 @@ syntax schema = function (ctx) {
   }(${obj}))`
 }
 
-syntax meta = function (ctx) {
-
-}
-
 syntax is = function (ctx) {
-
+  const identifier = ctx.next().value
 }
 
