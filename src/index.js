@@ -1,6 +1,6 @@
 #lang "sweet.js"
 
-const Ajv = require('is-my-json-valid')
+const Ajv = require('ajv')
 const ajv = new Ajv({ v5: true, jsonPointers: true, allErrors: true })
 
 export syntax schema = function (ctx) {
