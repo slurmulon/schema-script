@@ -30,5 +30,13 @@ export syntax schema = function (ctx) {
 
 syntax is = function (ctx) {
   const identifier = ctx.next().value
+  const instance   = ctx.next().value
+  const schema     = ctx.next().value
+
+  if (instance && schema && schema.$validate) {
+    return schema.$validate(instance)
+  }
+
+  throw 'Malformed syntax, requires instance and schema'
 }
 
