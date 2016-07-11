@@ -7,7 +7,6 @@ import Ajv from 'ajv' for syntax
 const ajv = new Ajv({ v5: true, jsonPointers: true, allErrors: true })
 
 export syntax schema = function (ctx) {
-  const ajv = new Ajv({ v5: true, jsonPointers: true, allErrors: true })
   const identifier = ctx.next().value
   const reference  = `#/${identifier}`
 
