@@ -1,9 +1,13 @@
 #lang "sweet.js"
 
-const Ajv = require('ajv')
+// Blocked from being usable
+// @see: https://github.com/sweet-js/sweet.js/issues/233
+import Ajv from 'ajv' for syntax
+
 const ajv = new Ajv({ v5: true, jsonPointers: true, allErrors: true })
 
 export syntax schema = function (ctx) {
+  const ajv = new Ajv({ v5: true, jsonPointers: true, allErrors: true })
   const identifier = ctx.next().value
   const reference  = `#/${identifier}`
 
